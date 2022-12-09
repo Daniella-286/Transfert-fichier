@@ -45,7 +45,7 @@ public class ServerSon {
             Socket client = server.accept();
 
             ///mandray ilay ligne avy any @ serverPricip
-            InputStream is = client.getInputStream();                                       //lire le message envoyé
+            InputStream is = client.getInputStream();                                       
             ObjectInputStream message = new ObjectInputStream(is);
             Object obj  = message.readObject();
             bytes = (byte[]) obj ; 
